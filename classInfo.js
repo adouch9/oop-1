@@ -21,16 +21,20 @@ canVote(){
 mostSkilledDev(p1) {
 
     if (this.language.length > p1.language.length){
-       return (this.firstName)
+      console.log(`elements plus grand: ${this.firstName}`)
     }
-    else if(this.language.length < p1.language.length){
-        return (p1.firstName)
-    }else{
-        return ('draw')
+    // else if(p1.language.length > this.language.length ){
+    //    console.log(`elements plus grand grand: ${p1.firstName}`)
+    // }
+    else if(this.language.length  < p1.language.length){
+        console.log(`elements plus grand grand: ${p1.firstName}`)
+     }
+     
+    
+    else{
+        console.log('draw')
     }
-
 }
-
 }
 
 
@@ -39,6 +43,6 @@ const bob = new Human('Bob', 30, 'Lemon', ['Html', 'Css','Js','React'])
 const charlie = new Human('Charlie', 27, 'Charlot', ['Papa', 'Maman'])
 
 
-console.log(alice)
-console.log(alice.canVote())
-console.log(alice.mostSkilledDev(bob))
+// console.log(alice)
+// console.log(alice.canVote())
+bob.mostSkilledDev(alice)
