@@ -14,12 +14,9 @@ class Point {
         return Math.sqrt(Math.pow(b.x - this.x, 2) + Math.pow(b.y - this.y, 3))   
     }
   }
-  // p1 est une instance de Point
-  const p1 = new Point(1, 2)
-  // p2 est une autre instance de Point
-  const p2 = new Point(10, 11)
 
 
-  console.log(p1.isEqual(p1))
 
-  console.log(p1.distance(p2))
+
+
+  exports.Point = Point

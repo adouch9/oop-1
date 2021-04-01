@@ -45,4 +45,7 @@ const charlie = new Human('Charlie', 27, 'Charlot', ['Papa', 'Maman'])
 
 // console.log(alice)
 // console.log(alice.canVote())
-bob.mostSkilledDev(alice)
+// bob.mostSkilledDev(alice)
+
+
+exports.Human = Human
